@@ -277,12 +277,12 @@ pdf.ln(10)
 
 # Composição das ações
 
-adiciona_topico("Composição das Ações")
+adiciona*topico("Composição das Ações")
 pdf.cell(200, 10, txt = f"Número de ações flutuantes: {info.get('floatShares', 'Não encontrado')}", ln = True, align = 'L')
 pdf.cell(200, 10, txt = f"Número total de ações emitidas: {info.get('sharesOutstanding', 'Não encontrado')}", ln = True, align = 'L')
 pdf.cell(200, 10, txt = f"Número estimado de ações emitidas (potencial): {info.get('impliedSharesOutstanding', 'Não encontrado')}", ln = True, align = 'L')
-pdf.cell(200, 10, txt = f"Percentual de ações detidas por insiders (diretoria e funcionários): {round(info.get('heldPercentInsiders', 0) _ 100, 2)}%", ln = True, align = 'L')
-pdf.cell(200, 10, txt = f"Percentual de ações detidas por instituições financeiras: {round(info.get('heldPercentInstitutions', 0) _ 100, 2)}%", ln = True, align = 'L')
+pdf.cell(200, 10, txt = f"Percentual de ações detidas por insiders (diretoria e funcionários): {round(info.get('heldPercentInsiders', 0) * 100, 2)}%", ln = True, align = 'L')
+pdf.cell(200, 10, txt = f"Percentual de ações detidas por instituições financeiras: {round(info.get('heldPercentInstitutions', 0) \_ 100, 2)}%", ln = True, align = 'L')
 pdf.ln(10)
 
 # Preços e dividendos
