@@ -209,6 +209,7 @@ Para tornar o estudo das ações mais prático, até mesmo porque essa é uma fe
 
 ## **LEMBRE-SE DE SUBSTITUIR O TICKET DA AÇÃO DE INTERESSE EM "ticker = yf.Ticker('PETR4.SA')".**
 
+```
 # Importar bibliotecas necessárias
 
 import yfinance as yf
@@ -383,3 +384,5 @@ pdf.ln(10)
 
 nome*arquivo = f"relatorio*{info['symbol'].replace('.', '\_')}.pdf"
 pdf.output(nome_arquivo)
+
+```
